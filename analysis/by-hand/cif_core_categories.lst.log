@@ -1,0 +1,70 @@
++ directory-metadata
++ whoami
+saulius
++ hostname -f
+starta
++ pwd
+/home/saulius/src/domain-crystallography
++ set +x
++ git remote -v
+origin	git@github.com:sauliusg/domain-crystallography.git (fetch)
+origin	git@github.com:sauliusg/domain-crystallography.git (push)
++ git branch -v
+* cif-data af2e002 Generating a list of categories in 'cif_core.dic'.
+  master   936954e Ignoring the generated build/ directory.
++ git status
+On branch cif-data
+Your branch is up to date with 'origin/cif-data'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   cif_core_categories.lst.log
+
+no changes added to commit (use "git add" and/or "git commit -a")
++ df -h .
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme1n1p1  1,9T  935G  847G  53% /home
++ type osname
+osname is /home/saulius/scripts/osname
++ osname
+Linuxmint-20.3
++ uname -a
+Linux starta 5.15.0-78-generic #85~20.04.1-Ubuntu SMP Mon Jul 17 09:42:39 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
++ date
+2023-08-03T10:18:11 EEST
++ cd /home/saulius/struct/IUCr/COMCIFS/cif_core/
++ directory-metadata
++ whoami
+saulius
++ hostname -f
+starta
++ pwd
+/home/saulius/struct/IUCr/COMCIFS/cif_core
++ set +x
++ git remote -v
+origin	https://github.com/COMCIFS/cif_core.git (fetch)
+origin	https://github.com/COMCIFS/cif_core.git (push)
++ git branch -v
+* master 562250e Corrected _dictionary.namespace definition  (#454)
++ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
++ df -h .
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme1n1p1  1,9T  935G  847G  53% /home
++ type osname
+osname is /home/saulius/scripts/osname
++ osname
+Linuxmint-20.3
++ uname -a
+Linux starta 5.15.0-78-generic #85~20.04.1-Ubuntu SMP Mon Jul 17 09:42:39 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
++ date
+2023-08-03T10:18:11 EEST
++ grep -F _name.category_id /home/saulius/struct/IUCr/COMCIFS/cif_core/cif_core.dic
++ awk '{print tolower($2)}'
++ sort
++ uniq -c
++ sort -nr -k1,1
