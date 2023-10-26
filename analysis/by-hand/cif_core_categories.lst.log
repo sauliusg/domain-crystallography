@@ -2,19 +2,19 @@
 + whoami
 saulius
 + hostname -f
-starta
+tasmanijos-velnias
 + pwd
-/home/saulius/src/domain-crystallography
+/home/saulius/src/cif-ontology-work/git-repositories/saulius/domain-crystallography/analysis/by-hand
 + set +x
 + git remote -v
 origin	git@github.com:sauliusg/domain-crystallography.git (fetch)
 origin	git@github.com:sauliusg/domain-crystallography.git (push)
 + git branch -v
-* cif-data af2e002 Generating a list of categories in 'cif_core.dic'.
-  master   936954e Ignoring the generated build/ directory.
+* concepts-based-on-CIF-core b756fd2 Copying the 'crystallography-concepts.rst' from the repo git@github.com:sauliusg/CIF-ontology.git (branch cif-data, commit 5c3b660) where the concept descriptions were started.
+  master                     9b60f88 Added DOI badge (#19)
 + git status
-On branch cif-data
-Your branch is up to date with 'origin/cif-data'.
+On branch concepts-based-on-CIF-core
+Your branch is up to date with 'origin/concepts-based-on-CIF-core'.
 
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -23,22 +23,22 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 + df -h .
-Filesystem      Size  Used Avail Use% Mounted on
-/dev/nvme1n1p1  1,9T  935G  847G  53% /home
+Filesystem                  Size  Used Avail Use% Mounted on
+/dev/mapper/linux--vg-home  3,5T  3,0T  393G  89% /home
 + type osname
 osname is /home/saulius/scripts/osname
 + osname
-Linuxmint-20.3
+Linuxmint-20.1
 + uname -a
-Linux starta 5.15.0-78-generic #85~20.04.1-Ubuntu SMP Mon Jul 17 09:42:39 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+Linux tasmanijos-velnias 5.4.0-164-generic #181-Ubuntu SMP Fri Sep 1 13:41:22 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
 + date
-2023-08-03T10:18:11 EEST
+2023-10-26T09:00:15 EEST
 + cd /home/saulius/struct/IUCr/COMCIFS/cif_core/
 + directory-metadata
 + whoami
 saulius
 + hostname -f
-starta
+tasmanijos-velnias
 + pwd
 /home/saulius/struct/IUCr/COMCIFS/cif_core
 + set +x
@@ -46,25 +46,25 @@ starta
 origin	https://github.com/COMCIFS/cif_core.git (fetch)
 origin	https://github.com/COMCIFS/cif_core.git (push)
 + git branch -v
-* master 562250e Corrected _dictionary.namespace definition  (#454)
+* master ee92c28 Remove description of looping behaviour from Set category description (#464)
 + git status
 On branch master
 Your branch is up to date with 'origin/master'.
 
 nothing to commit, working tree clean
 + df -h .
-Filesystem      Size  Used Avail Use% Mounted on
-/dev/nvme1n1p1  1,9T  935G  847G  53% /home
+Filesystem                  Size  Used Avail Use% Mounted on
+/dev/mapper/linux--vg-home  3,5T  3,0T  393G  89% /home
 + type osname
 osname is /home/saulius/scripts/osname
 + osname
-Linuxmint-20.3
+Linuxmint-20.1
 + uname -a
-Linux starta 5.15.0-78-generic #85~20.04.1-Ubuntu SMP Mon Jul 17 09:42:39 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+Linux tasmanijos-velnias 5.4.0-164-generic #181-Ubuntu SMP Fri Sep 1 13:41:22 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
 + date
-2023-08-03T10:18:11 EEST
+2023-10-26T09:00:15 EEST
 + grep -F _name.category_id /home/saulius/struct/IUCr/COMCIFS/cif_core/cif_core.dic
-+ awk '{print tolower($2)}'
 + sort
 + uniq -c
 + sort -nr -k1,1
++ awk '{print tolower($2)}'
