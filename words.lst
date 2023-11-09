@@ -1,4 +1,4 @@
-personal_ws-1.1 en 29 
+personal_ws-1.1 en 31 
 CIF
 CIFs
 DDLm
@@ -17,12 +17,14 @@ exptl
 fract
 hbond
 mathbb
+mnp
 param
 pqr
 publ
 refln
 reflns
 stol
+substitutional
 symop
 techeditor
 transf
