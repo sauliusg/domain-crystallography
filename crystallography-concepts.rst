@@ -14,9 +14,9 @@ A crystal is a solid material which is adequately described by the following *sc
 Unit cell (CIF category CELL, 53 data items)
 ............................................
 
-The *unit cell*, defined in the CELL CIF category, describes a repeating unit of a crystal. This repeating unit fills 3D Euclidean space without the gaps and without the overlaps. The unit cells through the 3D space are related to each other by repeatedly translating along the three non-coplanar vectors \vec{a}, \vec{b} and \vec{c}; i.e. any translation \vec{T_{pqr}} = p\vec{a} + q\vec{b} + r\vec{c}, p,q,r \in \mathbb{Z} (𝐓ₚᵣₛ=p𝐚+r𝐛+s𝐜, where p,r,s ∈ ℤ) maps any crystal cell into another identical crystal cell of the crystal. This mapping implies that the ideal crystal in this model is infinite, i.e. crystal boundary effects are not considered in the first approximation.
+The *unit cell*, defined in the CELL CIF category, describes a repeating unit of a crystal. This repeating unit fills 3D Euclidean space without the gaps and without the overlaps. The unit cells through the 3D space are related to each other by repeatedly translating along the three non-coplanar vectors \vec{a}, \vec{b} and \vec{c}; i.e. any translation \vec{T_{mnp}} = m\vec{a} + n\vec{b} + p\vec{c}, m,n,p \in \mathbb{Z} (𝐓ₘₙₚ=m𝐚+n𝐛+p𝐜, where m,n,p ∈ ℤ) maps any crystal cell into another identical crystal cell of the crystal. This mapping implies that the ideal crystal in this model is infinite, i.e. crystal boundary effects are not considered in the first approximation.
 
-The \vec{T_{pqr}} translation vectors map the crystal (Euclidean space) in to itself and form a translation symmetry group of the crystal. 
+The \vec{T_{mnp}} (𝐓ₘₙₚ) translation vectors map the crystal (Euclidean space) in to itself and form a translation symmetry group of the crystal. 
 
 In the physical model of the crystal, the unit cell is considered to be filled by physical entities such like elementary particles (electrons, nuclei). For the purpose of describing the X-ray scattering experiments, the unit cell can be considered to be filled by continuous electron density. For neutron scattering experiments, the cell is filled with nucleon density, described as scattering length density.
 
