@@ -70,8 +70,6 @@ refine_diff (6)
 atom_sites (6)
 space_group_wyckoff (5)
 
-display_colour (5)
-
 model (3)
 
 exptl_crystal_appearance (3)
@@ -197,6 +195,10 @@ Auxiliary metadata concepts
 journal_techeditor (7)
 journal_coeditor (7)
 
+Representation concepts
+-----------------------
+
+display_colour (5)
 
 Unclassified concepts
 ---------------------
