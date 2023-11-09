@@ -6,13 +6,34 @@ This file describes crystallography concepts based on the categories found in th
 Main concepts
 -------------
 
-cell (53)
-atom_site (53)
+crystal (0)
+...........
 
-refln (44)
-diffrn_refln (41)
+A crystal is a solid material which is adequately described by the following *scientific model*: the bulk of this solid body is composed of identical repeated units; these units fill the Euklidean space without gaps and without overlaps. The repeated unit us called a *unit cell* (crystallographic term) or a *fundamental domain* (mathematical term). See *cell*.
+
+Unit cell (CIF category CELL, 53 data items)
+............................................
+
+The *unit cell*, defined in the CELL CIF category, describes a repeating unit of a crystal. This repeating unit fills 3D Euclidean space without the gaps and without the overlaps. The unit cells through the 3D space are related to each other by repeatedly translating along the three non-coplanar vectors \vec{a}, \vec{b} and \vev{c}; i.e. any translation \vec{T_{pqr}} = p\vec{a} + q\vec{b} + r\vec{c}, p,q,r \in \mathbb{Z} (𝐓ₚᵣₛ=p𝐚+r𝐛+s𝐜, where p,r,s ∈ ℤ) maps any crystal cell into another identical crystal cell of the crystal. This mapping implies that the ideal crystal in this model is infinite, i.e. crystal boundary efects are not considered in the first approximation.
+
+The \vec{T_{pqr}} translation vectors map the crystal (Euclidean space) in to itself and form a translation symmetry group of the crystal. 
+
+In the physical model of the crystal, the unit cell is considered to be filled by phyical entities such like elementary particles (electrons, nuclei). For the purpuse of discribing the X-ray scattering experiments, the unit cell can be considered to be filled by continuous electron density. For neutron scattering experiments, the cell is filled with nuclon density, described as scattering length density.
+
+Atom and Atom site (CIF category ATOM_SITE, 53 data items)
+..........................................................
+
+In most cases, the *unit cell* can be assumed to be filled by sphericaly symmetric atoms (*spherical atom model*), consisting of a spherically symmetric electron cloud (for X-ray scattering), or a delta-function like nucleus (for neutron scattering). The electron density or the scatering length density in the unit cell (and, consequentlym by repetition using 𝐓ₚᵣₛ translations) is then obtained by simple arithmeic sum of densities from individual atoms. Each atom is described by its position in the unit cell, given by 3D coordinates of the sphere center, an atom type that implies certain density distribution for this atom (identical for all atoms of the given type), and additional parameters (occupancy, TDP) needed to describe scattering experiments precisely. Together these coordinates and additional parameters describe an *atom site* in a unit cell.
+
+It is tacitly assumed that the atoms in the unit cell of the crystal (described in CIFs) are the same atoms that chemists consider when modelling structure and chemical properties of compounds.
+
+Reflection refln (44), diffrn_refln (41)
+........................................
+
 atom_type_scat (39)
+
 chemical (33)
+
 exptl_crystal (31)
 diffrn (29)
 
