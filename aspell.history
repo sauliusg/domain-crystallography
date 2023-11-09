@@ -1,0 +1,1 @@
+  537  aspell -x -p ./words.lst -l en_AU -c crystallography-concepts.rst 
