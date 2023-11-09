@@ -27,10 +27,17 @@ In most cases, the *unit cell* can be assumed to be filled by spherically symmet
 
 It is tacitly assumed that the atoms in the unit cell of the crystal (described in CIFs) are the same atoms that chemists consider when modelling structure and chemical properties of compounds.
 
-Reflection refln (44), diffrn_refln (41)
-........................................
+Reflection (CIF categories REFLN (44 data names), DIFFRN_REFLN (41 data names))
+...............................................................................
 
-atom_type_scat (39)
+A beam of the incident radiation is reflected from the *crystal* in discrete directions (so called Bragg *reflections*). Each direction under which the beam is reflected (scattered) is identified by three integer numbers (*indices*).  h, k and l (h,k,l ∈ ℤ). The h,k,l indices constitue coordinates of a *reciprocal lattice* node in *reciprocal space*.
+
+Each reflection is characterised by two numbers: the amplitude and the phase, which correspond to (strictly speaking, are (structure) *factor* of) the amplitude and the phase of the scattered monochromatic radiation beam. Current experimental equipment, however, records only the *intensity* of the scattered beams, thus the amplitude and the phase are derived quantities.
+
+Atom type (CIF cat. ATOM_TYPE_SCAT (39 data names))
+...................................................
+
+
 
 chemical (33)
 
